@@ -1,12 +1,12 @@
-// carga del navbar y botones
+import { redireccionarInicio } from "../utils/redireccionarInicio.js";
+
 document.addEventListener("DOMContentLoaded", function () {
-  const inicioButton = document.querySelector("#inicioButton");
-  const registroButton = document.querySelector("#registroButton");
-  const loginButton = document.querySelector("#loginButton");
-
-  inicioButton.addEventListener("click", function () {});
-
+  const inicioButton = document.getElementById("inicioButton");
+  const registroButton = document.getElementById("registroButton");
+  const loginButton = document.getElementById("loginButton");
+  inicioButton.addEventListener("click", function (e) {
+    redireccionarInicio();
+  });
   registroButton.addEventListener("click", function () {});
-
   loginButton.addEventListener("click", function () {});
 });
