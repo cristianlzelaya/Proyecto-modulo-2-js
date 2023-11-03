@@ -1,30 +1,24 @@
 import { redireccionarInicio } from "./utils/redireccionarInicio.js";
+import Navbar from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
 let movies;
 
 document.addEventListener("DOMContentLoaded", function () {
+  Navbar();
   inicioButton.addEventListener("click", function (e) {
     redireccionarInicio();
-  });
-  registroButton.addEventListener("click", function () {});
+    registroButton.addEventListener("click", function () {});
   loginButton.addEventListener("click", function () {});
   console.log("inicio");
   setMovies()
   movies = getMovies();
   console.log(movies);
+  });
+
+
 });
 const inicioButton = document.getElementById("inicioButton");
 const registroButton = document.getElementById("registroButton");
 const loginButton = document.getElementById("loginButton");
-// const imgDestacada = document.getElementById("imgDesctacada");
 
-// const renderImgDestacada = (movies) => {
-//   imgDestacada.innerHTML = "";
-//   movies.map((movie) => {
-//     const visible = movie.destacada === true;
-//     if(visible){
-//       imgDestacada.innerHTML += imagenDestacada(movie)
-//     }
-//   })
-// }
