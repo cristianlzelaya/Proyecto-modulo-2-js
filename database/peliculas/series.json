@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Breaking Bad",
+        "despcion": "Drogas",
+        "imagen": "",
+        "destacada": true
+    },
+    {
+        "id": 2,
+        "name": "Thor",
+        "despcion": "Accion",
+        "imagen": "",
+        "destacada": false
+    },
+    {
+        "id": 3,
+        "name": "Thor 2",
+        "despcion": "Accion",
+        "imagen": "",
+        "destacada": false
+    }
+]
