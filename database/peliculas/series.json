@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Breaking Bad",
+        "categoría": "drama",
+        "imagen": "",
+        "destacada": true
+    },
+    {
+        "id": 2,
+        "name": "Thor",
+        "ategoría": "drama",
+        "imagen": "",
+        "destacada": false
+    },
+    {
+        "id": 3,
+        "name": "Thor 2",
+        "dategoría": "drama",
+        "imagen": "",
+        "destacada": false
+    }
+]
