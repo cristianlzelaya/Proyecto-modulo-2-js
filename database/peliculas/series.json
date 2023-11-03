@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "Breaking Bad",
-        "categoría": "drama",
+        "despcion": "Drogas",
         "imagen": "",
         "destacada": true
     },
     {
         "id": 2,
         "name": "Thor",
-        "ategoría": "drama",
+        "despcion": "Accion",
         "imagen": "",
         "destacada": false
     },
     {
         "id": 3,
         "name": "Thor 2",
-        "dategoría": "drama",
+        "despcion": "Accion",
         "imagen": "",
         "destacada": false
     }
