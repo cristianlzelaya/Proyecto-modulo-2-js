@@ -3,3 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+.principal{
+    /* color: white; */
+    background-image: url(../assets/img/desarrollador.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+
+}
+
+/* .heroSection{
+    background-image: url(../assets/bosque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.cards-iconos{
+    width: 80px;
+    border: none;
+}
+
+.cards-integrantes{
+    width: 400px;
+    /* height: 500px; */
+}
