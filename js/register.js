@@ -16,7 +16,6 @@ const emailInput = document.getElementById("signUpFormEmailInput");
 const passwordInput = document.getElementById("signUpFormPasswordInput");
 
 const emailValid = (email) => {
-  // Recibe 'email' como argumento
   signUpFormEmailInput.classList.remove("is-valid", "is-invalid");
   const isEmailValid = validateEmail(email) && validateExistingEmail(email);
   if (isEmailValid) {
@@ -28,7 +27,6 @@ const emailValid = (email) => {
 };
 
 const passwordValid = (password) => {
-  // Recibe 'password' como argumento
   signUpFormPasswordInput.classList.remove("is-valid", "is-invalid");
   const isPasswordValid = validateSignUpPassword(password);
   if (isPasswordValid) {
@@ -41,10 +39,10 @@ const passwordValid = (password) => {
 
 const registerSubmit = async (e) => {
   e.preventDefault();
-  const email = emailInput.value; // Obtén el valor del input de correo
-  const password = passwordInput.value; // Obtén el valor del input de contraseña
-  const mailValido = emailValid(email); // Pasa 'email' como argumento
-  const passwordValido = passwordValid(password); // Pasa 'password' como argumento
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  const mailValido = emailValid(email);
+  const passwordValido = passwordValid(password);
   if (mailValido && passwordValido) {
     crearUsuario({ email, password });
     guardarUsuario();
