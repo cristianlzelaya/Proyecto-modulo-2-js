@@ -16,17 +16,21 @@
 
 }
 
-/* .heroSection{
-    background-image: url(../assets/bosque.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.caracteristicas{
+    background-color: rgb(208, 219, 235);
+}
+
+.imgPrincipales{
+    border-radius: 50%;
+}
 
 .cards-iconos{
     width: 80px;
