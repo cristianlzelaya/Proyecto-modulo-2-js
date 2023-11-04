@@ -25,7 +25,7 @@ h2{
 }
 
 .caracteristicas{
-    background-color: rgb(208, 219, 235);
+    background-color: rgb(226, 229, 250)
 }
 
 .imgPrincipales{
@@ -38,5 +38,5 @@ h2{
 }
 
 .cards-integrantes{
-    max-width: 350px;
+    max-width: 250px;
 }
