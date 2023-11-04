@@ -38,6 +38,5 @@ h2{
 }
 
 .cards-integrantes{
-    width: 400px;
-    /* height: 500px; */
+    max-width: 350px;
 }
