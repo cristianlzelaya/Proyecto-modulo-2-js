@@ -13,13 +13,12 @@
     crossorigin="anonymous"
   />
   <body>
-    <header>
-    </header>
+    <header></header>
     <main>
       <section class="form-register">
         <div class="login-box">
           <h2>Registro</h2>
-          <form id="signUpForm" name="signUpForm"> <!-- Cambio realizado aquí -->
+          <form id="signUpForm" name="signUpForm">
             <div class="user-box">
               <input
                 type="email"
@@ -39,6 +38,11 @@
                 maxlength="30"
               />
               <label>Contraseña</label>
+              <div class="invalid-feedback" id="passwordFeedbackMessage"></div>
+            </div>
+            <div class="text-muted">
+              Su contraseña debe contener entre 8 y 10 caracteres y al menos una
+              letra y un número.
             </div>
             <button type="submit" class="styled-button">
               <span></span>
@@ -58,7 +62,7 @@
             </div>
 
             <div class="styled-button-container">
-              <a href="https://www.google.com/" class "styled-button">
+              <a href="https://www.google.com/" class="styled-button">
                 <span></span>
                 <span></span>
                 <span></span>

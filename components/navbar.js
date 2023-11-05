@@ -1,8 +1,10 @@
-// Importa la función que necesitas
+// Importa las funciones que necesitas
 import { redireccionarInicio } from "../utils/redireccionarInicio.js";
+import { redireccionarRegistro } from "../utils/redireccionarRegistro.js";
 
-// Asigna la función al objeto global (window)
+// Asigna las funciones al objeto global (window)
 window.redireccionarInicioHandler = redireccionarInicio;
+window.redireccionarRegistroHandler = redireccionarRegistro;
 
 const header = document.querySelector("header");
 
@@ -11,7 +13,7 @@ const Navbar = () => {
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand">Peliculas</a>
-        <img src="assets/Logo.png" alt="logoNav" id="logoNav" />
+        <img src="../assets/Logo.png" alt="logoNav" id="logoNav" />
         <button
           class="navbar-toggler"
           type="button"
@@ -20,7 +22,7 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
+        
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +33,7 @@ const Navbar = () => {
                 aria-current="page"
                 id="inicioButton"
                 onclick="redireccionarInicioHandler()" <!-- Usa la función global -->
-              >
+              
                 Inicio
               </button>
             </li>
@@ -40,8 +42,9 @@ const Navbar = () => {
                 class="nav-link active"
                 aria-current="page"
                 id="registroButton"
-              >
-                Registrate
+                onclick="redireccionarRegistroHandler()" <!-- Usa la función global para redireccionar al registro -->
+              
+                Regístrate
               </button>
             </li>
             <li class="nav-item">
