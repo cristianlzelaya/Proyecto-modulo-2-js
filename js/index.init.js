@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
   movies = getMovies();
   console.log(movies);
   renderImgDestacada(movies)
+})
 });
+
 const inicioButton = document.getElementById("inicioButton");
 const registroButton = document.getElementById("registroButton");
 const loginButton = document.getElementById("loginButton");
