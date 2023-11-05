@@ -1,9 +1,9 @@
-const imagenDestacada = (movies) => {
-    const img = document.createElement (`<div>
-    <img src="${movies.imagen}" alt="${movies.name}">
+export const imagenDestacada = (movies) => {
+  return `<div class="${movies.style}">
+    
     <h3>"${movies.name}"</h3>
-    <p>"${movies.descripcion}"</p>
-    <button class="btn btn-body-primary">reproducir</button>
-  </div>`)
+    <p>${movies.descripcion}</p>
+    <button class="btn btn-dark">Reproducir</button>
+  </div>`
   }
   
