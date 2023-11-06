@@ -2,3 +2,20 @@
   width: 65px;
   height: auto;
 }
+
+.bgError {
+  background-color: rgb(96, 32, 128);
+}
+
+.fondoFooter {
+  background-color: #602080;
+}
+
+.letrasFooter{
+  color: rgb(191, 120, 191);
+}
+
+.footerTitle {
+  color: rgb(242, 248, 255);
+  margin: 1rem;
+}
