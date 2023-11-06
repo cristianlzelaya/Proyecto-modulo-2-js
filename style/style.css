@@ -2,7 +2,6 @@
   width: 65px;
   height: auto;
 }
-
 .bgError {
   background-color: rgb(96, 32, 128);
 }
@@ -19,3 +18,9 @@
   color: rgb(242, 248, 255);
   margin: 1rem;
 }
+
+.img{
+  height: 100vh;
+  background-image:url("https://1.bp.blogspot.com/-2l-99Qyd1K8/UmeNEO_FaWI/AAAAAAAAl8Y/vxYBA4cQ1lM/s1600/thor-2-mundo-oscuro-posters-todos.jpg");
+}
+

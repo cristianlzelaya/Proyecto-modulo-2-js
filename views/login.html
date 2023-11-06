@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/style/register.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
-  <link rel="stylesheet" href="../style/register.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  />
   <body>
     <header></header>
     <main>
-      <section class="form-register">
+      <section class="form-login">
         <div class="login-box">
-          <h2>Registro</h2>
-          <form id="signUpForm" name="signUpForm">
+          <h2>Login</h2>
+          <form id="loginForm">
             <div class="user-box">
               <input
                 type="email"
-                name="correo"
-                id="signUpFormEmailInput"
+                name="email"
+                id="loginFormEmailInput"
                 required
                 maxlength="30"
               />
@@ -32,24 +32,23 @@
             <div class="user-box">
               <input
                 type="password"
-                name="contrasena"
-                id="signUpFormPasswordInput"
+                name="password"
+                id="loginFormPasswordInput"
                 required
                 maxlength="30"
               />
               <label>Contraseña</label>
-              <div class="invalid-feedback" id="passwordFeedbackMessage"></div>
-            </div>
-            <div class="text-muted">
-              Su contraseña debe contener entre 8 y 10 caracteres y al menos una
-              letra y un número.
+              <div class="invalid-feedback" id="invalidLoginFeedback">
+                Hay un error en el mail o contraseña
+              </div>
+              <div id="feedbackMessage" class="feedback-message hidden"></div>
             </div>
             <button type="submit" class="styled-button">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              Registrarse
+              Iniciar sesión
             </button>
             <div class="styled-button-container">
               <a href="https://www.facebook.com/" class="styled-button">
@@ -75,6 +74,6 @@
       </section>
     </main>
     <footer></footer>
-    <script type="module" src="../js/register.js"></script>
+    <script type="module" src="../js/login.js"></script>
   </body>
 </html>
