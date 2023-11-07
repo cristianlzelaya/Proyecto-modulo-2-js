@@ -18,7 +18,7 @@
       <section class="form-login">
         <div class="login-box">
           <h2>Login</h2>
-          <form id="loginForm">
+          <form id="loginForm" action="procesar_recuperacion.php" method="POST">
             <div class="user-box">
               <input
                 type="email"
@@ -50,26 +50,10 @@
               <span></span>
               Iniciar sesión
             </button>
-            <div class="styled-button-container">
-              <a href="https://www.facebook.com/" class="styled-button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Iniciar sesión con Facebook
-              </a>
-            </div>
-
-            <div class="styled-button-container">
-              <a href="https://www.google.com/" class="styled-button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Iniciar sesión con Google
-              </a>
-            </div>
           </form>
+          <div class="password-recovery-link">
+            <a href="recuperarContrarseña.html">¿Olvidaste tu contraseña?</a>
+          </div>
         </div>
       </section>
     </main>
