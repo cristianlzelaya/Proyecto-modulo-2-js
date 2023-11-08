@@ -1,14 +1,19 @@
 import { redireccionarInicio } from "../utils/redireccionarInicio.js";
 import { redireccionarRegistro } from "../utils/redireccionarRegistro.js";
 import { redireccionarLogin } from "../utils/redireccionarLogin.js";
+import { logout } from "../utils/userNoLog.js";
+import { ObtenerUsuarioLog } from "../utils/obtenerUsuarioLogeado.js";
 
 window.redireccionarInicioHandler = redireccionarInicio;
 window.redireccionarRegistroHandler = redireccionarRegistro;
 window.redireccionarLoginHandler = redireccionarLogin;
+window.logoutHandler = logout;
 
 const header = document.querySelector("header");
 
 export const Navbar = () => {
+  const loggedUser = ObtenerUsuarioLog();
+
   const navContent = `
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -28,36 +33,67 @@ export const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <button
+              <a
                 class="nav-link active btn"
                 style="color: white;"
                 aria-current="page"
                 id="inicioButton"
-                onclick="redireccionarInicioHandler()" <!-- Usa la función global -->
-              Inicio
-              </button>
+                href="#"
+                onclick="redireccionarInicioHandler()"
+              >Inicio</a>
             </li>
-            <li class "nav-item">
-              <button
-                class="nav-link active btn"
-                style="color: white;"
-                aria-current="page"
-                id="registroButton"
-                onclick="redireccionarRegistroHandler()" <!-- Usa la función global para redireccionar al registro -->
-              Regístrate
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="nav-link active btn"
-                style="color: white;"
-                aria-current="page"
-                id="loginButton"
-                onclick="redireccionarLoginHandler()" <!-- Usa la función global para redireccionar al login -->
-              Login
-              </button>
-            </li>
-            <li class="nav-item dropdown"></li>
+            ${
+              loggedUser
+                ? `
+                   <li class="nav-item">
+                     <a
+                       class="nav-link active btn"
+                       style="color: white;"
+                       aria-current="page"
+                       id="logoutButton"
+                       href="#"
+                       onclick="logoutHandler()"
+                     >Cerrar Sesión</a>
+                   </li>
+                   ${
+                     loggedUser.role === "admin"
+                       ? `
+                         <li class="nav-item">
+                           <a
+                             class="nav-link active btn"
+                             style="color: white;"
+                             aria-current="page"
+                             id="adminButton"
+                             href="#"
+                           >Admin</a>
+                         </li>
+                       `
+                       : ""
+                   }
+                 `
+                : `
+                   <li class="nav-item">
+                     <a
+                       class="nav-link active btn"
+                       style="color: white;"
+                       aria-current="page"
+                       id="loginButton"
+                       href="#"
+                       onclick="redireccionarLoginHandler()"
+                     >Login</a>
+                   </li>
+                   <li class="nav-item">
+                     <a
+                       class="nav-link active btn"
+                       style="color: white;"
+                       aria-current="page"
+                       id="registroButton"
+                       href="#"
+                       onclick="redireccionarRegistroHandler()"
+                     >Regístrate</a>
+                   </li>
+                 `
+            }
           </ul>
           <form class="d-flex">
             <input
