@@ -1,19 +1,24 @@
-// Importa las funciones que necesitas
 import { redireccionarInicio } from "../utils/redireccionarInicio.js";
 import { redireccionarRegistro } from "../utils/redireccionarRegistro.js";
+import { redireccionarLogin } from "../utils/redireccionarLogin.js";
+import { logout } from "../utils/userNoLog.js";
+import { ObtenerUsuarioLog } from "../utils/obtenerUsuarioLogeado.js";
 
-// Asigna las funciones al objeto global (window)
 window.redireccionarInicioHandler = redireccionarInicio;
 window.redireccionarRegistroHandler = redireccionarRegistro;
+window.redireccionarLoginHandler = redireccionarLogin;
+window.logoutHandler = logout;
 
 const header = document.querySelector("header");
 
-const Navbar = () => {
+export const Navbar = () => {
+  const loggedUser = ObtenerUsuarioLog();
+
   const navContent = `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand">Peliculas</a>
-        <img src="../assets/Logo.png" alt="logoNav" id="logoNav" />
+        <a class="navbar-brand" style="color: white;">Peliculas</a>
+        <img src="../assets/Logo.jpg" alt="logoNav" id="logoNav" />
         <button
           class="navbar-toggler"
           type="button"
@@ -22,41 +27,73 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <button
-                class="nav-link active"
+              <a
+                class="nav-link active btn"
+                style="color: white;"
                 aria-current="page"
                 id="inicioButton"
-                onclick="redireccionarInicioHandler()" <!-- Usa la función global -->
-              
-                Inicio
-              </button>
+                href="#"
+                onclick="redireccionarInicioHandler()"
+              >Inicio</a>
             </li>
-            <li class="nav-item">
-              <button
-                class="nav-link active"
-                aria-current="page"
-                id="registroButton"
-                onclick="redireccionarRegistroHandler()" <!-- Usa la función global para redireccionar al registro -->
-              
-                Regístrate
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="nav-link active"
-                aria-current="page"
-                id="loginButton"
-              >
-                Login
-              </button>
-            </li>
-            <li class="nav-item dropdown"></li>
+            ${
+              loggedUser
+                ? `
+                   <li class="nav-item">
+                     <a
+                       class="nav-link active btn"
+                       style="color: white;"
+                       aria-current="page"
+                       id="logoutButton"
+                       href="#"
+                       onclick="logoutHandler()"
+                     >Cerrar Sesión</a>
+                   </li>
+                   ${
+                     loggedUser.role === "admin"
+                       ? `
+                         <li class="nav-item">
+                           <a
+                             class="nav-link active btn"
+                             style="color: white;"
+                             aria-current="page"
+                             id="adminButton"
+                             href="#"
+                           >Admin</a>
+                         </li>
+                       `
+                       : ""
+                   }
+                 `
+                : `
+                   <li class="nav-item">
+                     <a
+                       class="nav-link active btn"
+                       style="color: white;"
+                       aria-current="page"
+                       id="loginButton"
+                       href="#"
+                       onclick="redireccionarLoginHandler()"
+                     >Login</a>
+                   </li>
+                   <li class="nav-item">
+                     <a
+                       class="nav-link active btn"
+                       style="color: white;"
+                       aria-current="page"
+                       id="registroButton"
+                       href="#"
+                       onclick="redireccionarRegistroHandler()"
+                     >Regístrate</a>
+                   </li>
+                 `
+            }
           </ul>
           <form class="d-flex">
             <input
@@ -74,7 +111,6 @@ const Navbar = () => {
     </nav>
   `;
 
-  // Establece el contenido de la barra de navegación en el elemento header
   header.innerHTML = navContent;
 };
 
