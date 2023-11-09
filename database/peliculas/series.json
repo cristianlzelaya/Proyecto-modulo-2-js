@@ -2,22 +2,155 @@
     {
         "id": 1,
         "name": "Breaking Bad",
-        "despcion": "Drogas",
-        "imagen": "",
+        "descripcion": "Drogas",
+        "imagen": "https://colonfilm.com/wp-content/uploads/2021/04/bohemian-rhapsody-poster.webp",
+        "categoria": "peliculas",
         "destacada": true
     },
     {
         "id": 2,
         "name": "Thor",
-        "despcion": "Accion",
-        "imagen": "",
+        "descripcion": "Accion",
+        "imagen": "https://i.pinimg.com/474x/b2/c0/8b/b2c08bbbfa8f017fd471782e6d90e747.jpg",
+        "categoria": "estreno",
         "destacada": false
     },
     {
         "id": 3,
         "name": "Thor 2",
-        "despcion": "Accion",
-        "imagen": "",
+        "descripcion": "",
+        "imagen": "https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_80,w_820/v1509556098/content-items/002/130/920/23032615_1453885808063402_2233926401809156054_n-original.jpg?1509556098",
+        "categoria": "serie",
         "destacada": false
+    },
+
+    {
+        "id": 4,
+        "name": "aaa",
+        "descripcion": "sss",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    },
+
+    {
+        "id": 5,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "drama",
+        "destacada": false
+
+    },
+
+    {
+        "id": 6,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "acción",
+        "destacada": false
+
+    },
+
+    {
+        "id": 7,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "acción",
+        "destacada": false
+
+    },
+
+    {
+        "id": 8,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "acción",
+        "destacada": false
+
+    },
+
+    {
+        "id": 9,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "acción",
+        "destacada": false
+
+    },
+
+    {
+        "id": 10,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "acción",
+        "destacada": false
+
+    },
+
+    {
+        "id": 11,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "drama",
+        "destacada": false
+
+    },
+
+    {
+        "id":12 ,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "drama",
+        "destacada": false
+
+    },
+
+    {
+        "id": 13,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 14,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 15,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 16,
+        "name": "",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
     }
 ]
