@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Panel de administración</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style/adminPanel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <button
+              id="btnAgregarPelicula"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modalAgregarPelicula"
+            >
+              Agregar Película
+            </button>
+            <!-- Formulario Modal para Agregar -->
+            <form id="formAgregarPelicula">
+              <div
+                class="modal fade"
+                id="modalAgregarPelicula"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="modalAgregarPeliculaLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalAgregarPeliculaLabel">
+                        Agregar Película
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="inputNombreModal">Nombre</label>
+                        <input
+                          type="text"
+                          id="inputNombreModal"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputCategoriaModal">Categoría</label>
+                        <input
+                          type="text"
+                          id="inputCategoriaModal"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputDescripcionModal">Descripción</label>
+                        <input
+                          type="text"
+                          id="inputDescripcionModal"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputImagenModal">URL de la Imagen</label>
+                        <input
+                          type="url"
+                          id="inputImagenModal"
+                          class="form-control"
+                          placeholder="https://ejemplo.com/imagen.jpg"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputImagenDestacadaModal"
+                          >URL de la Imagen Destacada</label
+                        >
+                        <input
+                          type="url"
+                          id="inputImagenDestacadaModal"
+                          class="form-control"
+                          placeholder="https://ejemplo.com/imagenDestacada.jpg"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputVideoModal">URL del Video</label>
+                        <input
+                          type="url"
+                          id="inputVideoModal"
+                          class="form-control"
+                          placeholder="https://ejemplo.com/video.mp4"
+                        />
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="checkbox"
+                          id="inputPublicadoModal"
+                          class="form-check-input"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="inputPublicadoModal"
+                        >
+                          Publicado
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="btnGuardarPeliculaModal"
+                      >
+                        Guardar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Formulario Modal para Editar -->
+            <!-- Formulario Modal para Editar -->
+            <form id="formEditarPelicula">
+              <div
+                class="modal fade"
+                id="modalEditarPelicula"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="modalEditarPeliculaLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalEditarPeliculaLabel">
+                        Editar Película
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="inputNombreModalEditar">Nombre</label>
+                        <input
+                          type="text"
+                          id="inputNombreModalEditar"
+                          name="nombreEditar"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputCategoriaModalEditar">Categoría</label>
+                        <input
+                          type="text"
+                          id="inputCategoriaModalEditar"
+                          name="categoriaEditar"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputDescripcionModalEditar"
+                          >Descripción</label
+                        >
+                        <input
+                          type="text"
+                          id="inputDescripcionModalEditar"
+                          name="descripcionEditar"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputImagenModalEditar"
+                          >URL de la Imagen</label
+                        >
+                        <input
+                          type="url"
+                          id="inputImagenModalEditar"
+                          name="imagenEditar"
+                          class="form-control"
+                          placeholder="https://ejemplo.com/imagen.jpg"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputImagenDestacadaModalEditar"
+                          >URL de la Imagen Destacada</label
+                        >
+                        <input
+                          type="url"
+                          id="inputImagenDestacadaModalEditar"
+                          name="imagenDestacadaEditar"
+                          class="form-control"
+                          placeholder="https://ejemplo.com/imagenDestacada.jpg"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="inputVideoModalEditar">URL del Video</label>
+                        <input
+                          type="url"
+                          id="inputVideoModalEditar"
+                          name="videoEditar"
+                          class="form-control"
+                          placeholder="https://ejemplo.com/video.mp4"
+                        />
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="checkbox"
+                          id="inputPublicadoModalEditar"
+                          name="publicadoEditar"
+                          class="form-check-input"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="inputPublicadoModalEditar"
+                        >
+                          Publicado
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="btnGuardarCambios"
+                      >
+                        Guardar Cambios
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Resto del contenido -->
+            <div class="container">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Eliminar</th>
+                    <th scope="col">Visibilidad</th>
+                    <th scope="col">Destacada</th>
+                  </tr>
+                </thead>
+                <tbody id="adminTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="../js/panelAdmin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
