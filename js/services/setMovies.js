@@ -9,3 +9,5 @@ export const setMovies = () => {
     localStorage.setItem("movies", JSON.stringify(movies));
   }
 };
+
+

@@ -1,11 +1,10 @@
 import { Navbar } from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
-import imagenDestacada from "../components/imagenDestacada.js";
-import { User } from "../classes/user.js";
-import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
-
+import estrenosCategorie from "../components/estrenosCategorie.js";
 let movies;
+
+let pelis = [];
 
 document.addEventListener("DOMContentLoaded", function () {
   Navbar();
