@@ -1,3 +1,3 @@
 export function redireccionarLogin() {
-  window.location.href = "views/login.html";
+  window.location.href = "/views/login.html";
 }

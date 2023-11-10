@@ -1,10 +1,11 @@
-import moviesDb from "../../database/peliculas/series.json" assert { type: "json" };
+import { movies } from "../../database/peliculas/series.js";
 
 export const setMovies = () => {
-    console.log("getitem");
-  const movies = JSON.parse(localStorage.getItem("movies"));
-  if (!movies) {
+  console.log("getitem");
+  const moviesLocalStorage = JSON.parse(localStorage.getItem("movies"));
+  console.log();
+  if (!moviesLocalStorage) {
     console.log("hola");
-    localStorage.setItem("movies", JSON.stringify(moviesDb));
+    localStorage.setItem("movies", JSON.stringify(movies));
   }
 };

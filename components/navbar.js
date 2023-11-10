@@ -64,7 +64,7 @@ export const Navbar = () => {
                              style="color: white;"
                              aria-current="page"
                              id="adminButton"
-                             href="#"
+                             href="./views/panelAdmin.html"
                            >Admin</a>
                          </li>
                        `
