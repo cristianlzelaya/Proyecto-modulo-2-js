@@ -1,11 +1,10 @@
 import { Navbar } from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
-import estrenosCategorie from "../components/estrenosCategorie.js";
+import {createCarruselItem} from "./carrusel.js";
+import {getEstrenos} from "./services/getEstrenos.js"
+
 let movies;
-
-let pelis = [];
-
 document.addEventListener("DOMContentLoaded", function () {
   Navbar();
   setMovies();

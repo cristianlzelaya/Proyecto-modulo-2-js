@@ -4,7 +4,7 @@
         "name": "Breaking Bad",
         "descripcion": "Drogas",
         "imagen": "https://colonfilm.com/wp-content/uploads/2021/04/bohemian-rhapsody-poster.webp",
-        "categoria": "peliculas",
+        "categoria": "pelicula",
         "destacada": true
     },
     {
@@ -36,87 +36,17 @@
 
     {
         "id": 5,
-        "name": "",
+        "name": "z<cs ",
         "descripcion": "",
         "imagen": "",
-        "categoria": "drama",
+        "categoria": "pelicula",
         "destacada": false
 
     },
 
     {
         "id": 6,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "acción",
-        "destacada": false
-
-    },
-
-    {
-        "id": 7,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "acción",
-        "destacada": false
-
-    },
-
-    {
-        "id": 8,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "acción",
-        "destacada": false
-
-    },
-
-    {
-        "id": 9,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "acción",
-        "destacada": false
-
-    },
-
-    {
-        "id": 10,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "acción",
-        "destacada": false
-
-    },
-
-    {
-        "id": 11,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "drama",
-        "destacada": false
-
-    },
-
-    {
-        "id":12 ,
-        "name": "",
-        "descripcion": "",
-        "imagen": "",
-        "categoria": "drama",
-        "destacada": false
-
-    },
-
-    {
-        "id": 13,
-        "name": "",
+        "name": " zxdc",
         "descripcion": "",
         "imagen": "",
         "categoria": "estreno",
@@ -125,8 +55,78 @@
     },
 
     {
+        "id": 7,
+        "name": "advade",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "serie",
+        "destacada": false
+
+    },
+
+    {
+        "id": 8,
+        "name": "svdv",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    },
+
+    {
+        "id": 9,
+        "name": "bsfb",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "pelicula",
+        "destacada": false
+
+    },
+
+    {
+        "id": 10,
+        "name": "svfbrg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 11,
+        "name": "dbfs",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "serie",
+        "destacada": false
+
+    },
+
+    {
+        "id":12 ,
+        "name": "vsdg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    },
+
+    {
+        "id": 13,
+        "name": "bfsdfg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "pelicula",
+        "destacada": false
+
+    },
+
+    {
         "id": 14,
-        "name": "",
+        "name": "svbsdg",
         "descripcion": "",
         "imagen": "",
         "categoria": "estreno",
@@ -136,20 +136,20 @@
 
     {
         "id": 15,
-        "name": "",
+        "name": "dfbs",
         "descripcion": "",
         "imagen": "",
-        "categoria": "estreno",
+        "categoria": "serie",
         "destacada": false
 
     },
 
     {
         "id": 16,
-        "name": "",
+        "name": "svd",
         "descripcion": "",
         "imagen": "",
-        "categoria": "estreno",
+        "categoria": "documental",
         "destacada": false
 
     }
