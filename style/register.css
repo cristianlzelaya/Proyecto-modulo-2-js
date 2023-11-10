@@ -5,6 +5,11 @@
   --color-accent: #7678ed;
 }
 
+#logoNav {
+  width: 65px;
+  height: auto;
+}
+
 .navbar {
   padding: 10px 0;
 }
