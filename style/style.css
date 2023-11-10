@@ -2,7 +2,18 @@
   width: 65px;
   height: auto;
 }
-.img{
-  height: 100vh;
-  background-image:url("https://1.bp.blogspot.com/-2l-99Qyd1K8/UmeNEO_FaWI/AAAAAAAAl8Y/vxYBA4cQ1lM/s1600/thor-2-mundo-oscuro-posters-todos.jpg");
+
+.card-img-overlay{
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.card-title{
+  display: flex;
+  justify-content: start;
+}
+.card-img{
+ object-fit: cover;
 }

@@ -1,1 +1,0 @@
-const imagenDestacada = document.getElementById("imgDestacada")

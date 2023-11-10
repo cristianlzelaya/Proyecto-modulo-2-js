@@ -1,6 +1,6 @@
 // Importa las funciones que necesitas
-import { redireccionarInicio } from "../utils/redireccionarInicio.js";
-import { redireccionarRegistro } from "../utils/redireccionarRegistro.js";
+import { redireccionarInicio } from "../js/utils/redireccionarInicio.js";
+import { redireccionarRegistro } from "../js/utils/redireccionarRegistro.js";
 
 // Asigna las funciones al objeto global (window)
 window.redireccionarInicioHandler = redireccionarInicio;
