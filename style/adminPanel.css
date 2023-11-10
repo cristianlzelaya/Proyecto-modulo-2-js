@@ -4,8 +4,9 @@
   --color-text: #feeafa;
   --color-accent: #b8a6ad;
 }
-.body {
-  background: linear-gradient(to right, rgb(18, 18, 92), rgb(49, 8, 65));
+
+body {
+  background: linear-gradient(to right, rgb(197, 197, 206), rgb(112, 112, 112));
 }
 #logoNav {
   width: 65px;
@@ -38,13 +39,6 @@ html {
 
 .form-register .login-box {
   margin-top: 40px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: linear-gradient(var(--color-bg-top), var(--color-bg-top));
 }
 
 .login-box {
@@ -201,4 +195,30 @@ body {
 
 h2 {
   color: white;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
 }

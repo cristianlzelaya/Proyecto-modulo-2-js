@@ -9,7 +9,6 @@ import { guardarUsuario } from "../js/utils/guardarUsuarioLogeado.js";
 document.addEventListener("DOMContentLoaded", () => {
   Navbar();
 });
-
 const signUpForm = document.getElementById("signUpForm");
 const emailInput = document.getElementById("signUpFormEmailInput");
 const passwordInput = document.getElementById("signUpFormPasswordInput");

@@ -1,3 +1,5 @@
-import { textoPrueba } from "./pruebamodul.js";
+import Navbar from "../components/navbar.js";
 
-alert(textoPrueba);
+document.addEventListener("DOMContentLoaded", function () {
+  Navbar();
+});
