@@ -2,12 +2,51 @@ import { Navbar } from "../components/navbar.js";
 import { Pelicula } from "../classes/peliculas.js";
 import { TableRowComponent } from "../components/tableRow.js";
 import { getMovies } from "./services/getMovies.js";
+import { UserRowComponent } from "../components/UsersTableRow.js";
+import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
 
 const adminTableBody = document.getElementById("adminTableBody");
+const adminTableBodyUsuarios = document.getElementById(
+  "adminTableBodyUsuarios"
+);
+
+const renderAdminTableBodyUsuarios = () => {
+  adminTableBodyUsuarios.innerHTML = "";
+  const users = ObtenerUsuarios();
+  users.forEach((user) => {
+    const onAprobarClick = (userId) => () => {
+      aprobarUsuario(userId);
+    };
+    adminTableBodyUsuarios.innerHTML += UserRowComponent(user, onAprobarClick);
+  });
+};
+
+const aprobarUsuario = (userId) => {
+  const users = ObtenerUsuarios();
+  const usuario = users.find((user) => user.id === userId);
+  if (usuario) {
+    usuario.cambiarEstadoAprobado(!usuario.aprobado);
+    localStorage.setItem("users", JSON.stringify(users));
+    renderAdminTableBodyUsuarios();
+  }
+};
+
+export const toggleAprobado = (id) => {
+  const users = ObtenerUsuarios();
+  const usuario = users.find((user) => user.id === id);
+  if (usuario) {
+    usuario.aprobado = !usuario.aprobado;
+    localStorage.setItem("users", JSON.stringify(users));
+    renderAdminTableBodyUsuarios();
+  } else {
+    console.error("Usuario no encontrado");
+  }
+};
 
 document.addEventListener("DOMContentLoaded", (event) => {
   Navbar();
   renderAdminTableBody();
+  renderAdminTableBodyUsuarios();
   const btnGuardarPeliculaModal = document.getElementById(
     "btnGuardarPeliculaModal"
   );
