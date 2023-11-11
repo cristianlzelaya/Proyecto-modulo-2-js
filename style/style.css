@@ -14,8 +14,7 @@
   background-color: #602080;
 }
 
-
-.letrasFooter{
+.letrasFooter {
   color: rgb(191, 120, 191);
 }
 
@@ -24,8 +23,7 @@
   margin: 1rem;
 }
 
-
-.img{
+.img {
   height: 100vh;
   background-image: url("https://1.bp.blogspot.com/-2l-99Qyd1K8/UmeNEO_FaWI/AAAAAAAAl8Y/vxYBA4cQ1lM/s1600/thor-2-mundo-oscuro-posters-todos.jpg");
 }
@@ -49,4 +47,3 @@
 .navbar-nav .nav-item {
   margin-right: 15px;
 }
-
