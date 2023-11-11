@@ -1,7 +1,7 @@
 import { Navbar } from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
-import { imagenDestacada } from "../utils/imgDestacada.js";
+import imagenDestacada from "../components/imagenDestacada.js";
 import { User } from "../classes/user.js";
 import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
 
@@ -18,13 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
 const imgDestacada = document.getElementById("imgDestacada");
 
 const renderImgDestacada = (movies) => {
-  imgDestacada.innerHTML = "";
-  movies.map((movie) => {
-    const destacada = movie.destacada === true;
-    if (destacada) {
-      imgDestacada.innerHTML += imagenDestacada(movie);
-    }
-  });
+  let contenidoHTML = "";
+  const peliculaDestacada = movies.find((movie) => movie.favorita === true);
+  if (peliculaDestacada) {
+    contenidoHTML = imagenDestacada(peliculaDestacada);
+  } else {
+    contenidoHTML = "No hay una imagen";
+  }
+
+  imgDestacada.innerHTML = contenidoHTML;
 };
 
 const adminCreate = () => {
