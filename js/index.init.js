@@ -34,6 +34,7 @@ const adminCreate = () => {
     email: "PruebaRolling@gmail.com",
     password: "Admin83i",
     role: "admin",
+    aprobado: true,
   });
   const existingUsers = ObtenerUsuarios();
   const adminExists = existingUsers.some(
