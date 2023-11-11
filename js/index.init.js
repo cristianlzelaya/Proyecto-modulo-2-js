@@ -1,17 +1,27 @@
 import { Navbar } from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
-import {createCarruselItem} from "./carrusel.js";
-import {getEstrenos} from "./services/getEstrenos.js"
+import {getEstrenos} from "./services/getEstrenos.js";
+import { getPeliculas } from "./services/getPeliculas.js";
+import {getSeries} from "./services/getSeries.js";
+import { getDocumentales } from "./services/getDocumentales.js";
 
 let movies;
 document.addEventListener("DOMContentLoaded", function () {
   Navbar();
   setMovies();
   movies = getMovies();
-  console.log(movies);
-  renderImgDestacada(movies);
+  getEstrenos()
+  createCarruselItem();
+  renderImgDestacada();
+  getEstrenos();
+  getPeliculas();
+  getSeries();
+  getDocumentales()
 });
+
+console.log(getMovies('movies'));
+
 
 const imgDestacada = document.getElementById("imgDestacada");
 

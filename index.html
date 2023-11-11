@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="GroupName" content="Streaming de películas">
-    <meta name="description" content="sitio de streaming de películas y series">
-    <meta name="keywords" content="streaming, películas, series, entretenimiento, cine">
+    <meta name="GroupName" content="Streaming de películas" />
+    <meta
+      name="description"
+      content="sitio de streaming de películas y series"
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas, series, entretenimiento, cine"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Streaming de películas y series</title>
     <link rel="stylesheet" href="style/style.css" />
@@ -14,60 +20,200 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style/register.css">
-    <link rel="stylesheet" type="text/css" href="./Glider.js-master/Glider.js-master/glider.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/register.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Glider.js-master/Glider.js-master/glider.min.css"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/carrusel.css">
   </head>
   <body>
     <header></header>
     <main>
 
-      <!-- <div class="container glider-contain position-relative align-items-center">
+      <div class="contenedorCarruseles ">
 
-        <h2 class="text-center">Estrenos</h2>
-      
-        <div class="glider p-4" id="gliderEstrenos">
+        <div class="glider-contain container mt-2" id="sliderItem">
+          <h1 class="text-dark ms-3 mx-3 border-bottom">Estrenos</h1>
+          <div class="glider" id="gliderEstrenos"></div>
   
-       
-      
-        <button aria-label="Previous" class="glider-prev d-flex align-items-center border border-dark p-2  border-opacity-50 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
-          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-        </svg></button>
-        <button aria-label="Next" class="glider-next d-flex align-items-center border border-dark p-2  border-opacity-50 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-        </svg></button>
-        <div role="tablist" class="dots"></div>
-      </div> -->
-
-      <div class="glider-contain container mt-2" id="sliderItem">
-        <h1 class="text-light ms-3 mx-3 border-bottom">Acción</h1>
-        <div class="glider" id="gliderEstrenos">
-
-        
-
-
+          <button
+            aria-label="Previous"
+            class="glider-prev d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next"
+            class="glider-next d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </button>
+          <div role="tablist" class="dots"></div>
         </div>
-
-    <button aria-label="Previous" class="glider-prev d-flex align-items-center border border-dark p-2  border-opacity-50 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
-          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-        </svg></button>
-        <button aria-label="Next" class="glider-next d-flex align-items-center border border-dark p-2  border-opacity-50 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-        </svg></button>
-        <div role="tablist" class="dots"></div>
+  
+        <hr />
+  
+        <div class="glider-contain container mt-2" id="sliderItem">
+          <h1 class="text-dark ms-3 mx-3 border-bottom">Películas</h1>
+          <div class="glider" id="gliderPeliculas"></div>
+  
+          <button
+            aria-label="Previous"
+            class="glider-prev d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next"
+            class="glider-next d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </button>
+          <div role="tablist" class="dots"></div>
+        </div>
+  
+        <hr />
+  
+        <div class="glider-contain container mt-2" id="sliderItem">
+          <h1 class="text-dark ms-3 mx-3 border-bottom">Series</h1>
+          <div class="glider" id="gliderSeries"></div>
+  
+          <button
+            aria-label="Previous"
+            class="glider-prev d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next"
+            class="glider-next d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </button>
+          <div role="tablist" class="dots"></div>
+        </div>
+  
+        <hr />
+  
+        <div class="glider-contain container mt-2" id="sliderItem">
+          <h1 class="text-dark ms-3 mx-3 border-bottom">Documentales</h1>
+          <div class="glider" id="gliderDocumentales"></div>
+  
+          <button
+            aria-label="Previous"
+            class="glider-prev d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next"
+            class="glider-next d-flex align-items-center border border-dark p-2 border-opacity-50 rounded-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </button>
+          <div role="tablist" class="dots"></div>
+        </div>
       </div>
-      <hr>
-
       
-      
-
-        
-
     </main>
     <footer></footer>
 
     <script src="./Glider.js-master/Glider.js-master/glider.min.js"></script>
-    <script src="./js/carrusel.js" type="module"></script>
+    <script src="./js/carruselEstrenos.js" type="module"></script>
+    <script src="./js/carruselSeries.js" type="module"></script>
+    <script src="./js/carruselDocumentales.js" type="module"></script>
+    <script src="./js/carruselPeliculas.js" type="module"></script>
     <script src="/js/index.init.js" type="module"></script>
     <script type="module" src="./js/services/getEstrenos.js"></script>
     <script
@@ -75,6 +221,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
