@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to right, rgb(2, 2, 95), rgb(46, 1, 46));
+  }
 
 
 .principal{
-    /* color: white; */
     background-image: url(../assets/img/desarrollador.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,18 +20,25 @@
 
 h1{
     font-size: 4rem;
+    color: white;
 }
 
 h2{
     font-size: 3rem;
+    color: white;
 }
 
 .caracteristicas{
-    background-color: rgb(226, 229, 250)
+    background-color: rgb(218, 222, 249)
 }
 
 .imgPrincipales{
     border-radius: 50%;
+    max-width: 380px;
+}
+
+.imgHistoriaGrande{
+    display: none;
 }
 
 .cards-iconos{
@@ -40,3 +49,39 @@ h2{
 .cards-integrantes{
     max-width: 250px;
 }
+
+.roles{
+    font-size:small;
+    color: rgb(141, 97, 181);
+}
+
+.bg-cards{
+    background-color: rgba(255, 238, 246, 0.735);
+}
+
+@media only screen and (max-width: 990px) {
+   .imgVisionMision{
+    display: none;
+   }
+   .imgPrincipales{
+    border-radius: 20px;
+    }
+    .imgHistoria{
+        display: none;
+    }
+    .imgHistoriaGrande{
+        display:block
+    }
+  }
+@media only screen and (max-width: 450px) {
+    h1{
+        font-size: 3rem;
+    }
+  }
+  
+@media only screen and (max-width: 350px) {
+    h1{
+        font-size: 2.5rem;
+    }
+  }
+  

@@ -1,25 +1,156 @@
 [
-  {
-    "id": 1,
-    "name": "Breaking Bad",
-    "despcion": "Drogas",
-    "imagen": "https://1.bp.blogspot.com/-2l-99Qyd1K8/UmeNEO_FaWI/AAAAAAAAl8Y/vxYBA4cQ1lM/s1600/thor-2-mundo-oscuro-posters-todos.jpg",
-    "destacada": true,
-    "style": "img"
-  },
-  {
-    "id": 2,
-    "name": "Thor",
-    "despcion": "Accion",
-    "imagen": "",
-    "destacada": false,
-    "descripcion": "Nacido en la oscuridad, Malekith condujo a su pueblo a una guerra contra los asgardianos, y se creía que habían sido destruidos hace miles de años. Sin embargo, Malekith sobrevivió y ahora quiere transformar nuestro universo, sumergiéndole de nuevo en la oscuridad eterna."
-  },
-  {
-    "id": 3,
-    "name": "Thor 2",
-    "despcion": "Accion",
-    "imagen": "",
-    "destacada": false
-  }
+    {
+        "id": 1,
+        "name": "Breaking Bad",
+        "descripcion": "Drogas",
+        "imagen": "https://colonfilm.com/wp-content/uploads/2021/04/bohemian-rhapsody-poster.webp",
+        "categoria": "pelicula",
+        "destacada": true
+    },
+    {
+        "id": 2,
+        "name": "Thor",
+        "descripcion": "Accion",
+        "imagen": "https://i.pinimg.com/474x/b2/c0/8b/b2c08bbbfa8f017fd471782e6d90e747.jpg",
+        "categoria": "estreno",
+        "destacada": false
+    },
+    {
+        "id": 3,
+        "name": "Thor 2",
+        "descripcion": "",
+        "imagen": "https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_80,w_820/v1509556098/content-items/002/130/920/23032615_1453885808063402_2233926401809156054_n-original.jpg?1509556098",
+        "categoria": "serie",
+        "destacada": false
+    },
+
+    {
+        "id": 4,
+        "name": "aaa",
+        "descripcion": "sss",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    },
+
+    {
+        "id": 5,
+        "name": "z<cs ",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "pelicula",
+        "destacada": false
+
+    },
+
+    {
+        "id": 6,
+        "name": " zxdc",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 7,
+        "name": "advade",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "serie",
+        "destacada": false
+
+    },
+
+    {
+        "id": 8,
+        "name": "svdv",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    },
+
+    {
+        "id": 9,
+        "name": "bsfb",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "pelicula",
+        "destacada": false
+
+    },
+
+    {
+        "id": 10,
+        "name": "svfbrg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 11,
+        "name": "dbfs",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "serie",
+        "destacada": false
+
+    },
+
+    {
+        "id":12 ,
+        "name": "vsdg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    },
+
+    {
+        "id": 13,
+        "name": "bfsdfg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "pelicula",
+        "destacada": false
+
+    },
+
+    {
+        "id": 14,
+        "name": "svbsdg",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "estreno",
+        "destacada": false
+
+    },
+
+    {
+        "id": 15,
+        "name": "dfbs",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "serie",
+        "destacada": false
+
+    },
+
+    {
+        "id": 16,
+        "name": "svd",
+        "descripcion": "",
+        "imagen": "",
+        "categoria": "documental",
+        "destacada": false
+
+    }
 ]

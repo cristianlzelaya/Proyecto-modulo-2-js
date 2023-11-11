@@ -1,5 +1,5 @@
 import { ObtenerUsuarios } from "./obtenerUsuarios.js";
-import { User } from "../classes/user.js";
+import { User } from "../../classes/user.js";
 
 export const crearUsuario = ({ email, password }) => {
   if (email && password) {
