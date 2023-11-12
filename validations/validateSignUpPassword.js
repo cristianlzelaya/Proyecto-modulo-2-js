@@ -1,4 +1,4 @@
-import { passwordRegex } from "./passwordRegex";
+import { passwordRegex } from "./passwordRegex.js";
 
 /**
  *
