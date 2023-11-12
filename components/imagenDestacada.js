@@ -8,9 +8,7 @@ const imagenDestacada = (peliculaDestacada) => {
           <p class="card-text col-sm-12" style="color: white; margin-bottom: 10px;">${peliculaDestacada.descripcion}</p>
       </div>
   </div>
-</div>
-`;
-
+</div>`;
   return imgDestacada;
 };
 

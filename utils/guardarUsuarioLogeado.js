@@ -1,4 +1,4 @@
-import { ObtenerUsuarios } from "./obtenerUsuarios";
+import { ObtenerUsuarios } from "./obtenerUsuarios.js";
 
 export const guardarUsuario = (email) => {
   const users = ObtenerUsuarios();

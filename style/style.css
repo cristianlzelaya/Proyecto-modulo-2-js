@@ -1,10 +1,31 @@
-.body {
+body {
   background: linear-gradient(to right, rgb(2, 2, 95), rgb(46, 1, 46));
 }
 
+.body {
+  background: linear-gradient(to right, rgb(18, 18, 92), rgb(49, 8, 65));
+}
 #logoNav {
   width: 65px;
   height: auto;
 }
 
+.navbar {
+  padding: 10px 0;
+  background-color: #000000;
+}
 
+.navbar-brand {
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
