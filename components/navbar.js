@@ -4,6 +4,7 @@ import { redireccionarLogin } from "../utils/redireccionarLogin.js";
 import { logout } from "../utils/userNoLog.js";
 import { ObtenerUsuarioLog } from "../utils/obtenerUsuarioLogeado.js";
 
+
 window.redireccionarInicioHandler = redireccionarInicio;
 window.redireccionarRegistroHandler = redireccionarRegistro;
 window.redireccionarLoginHandler = redireccionarLogin;
@@ -13,7 +14,6 @@ const header = document.querySelector("header");
 
 export const Navbar = () => {
   const loggedUser = ObtenerUsuarioLog();
-
   const navContent = `
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -102,7 +102,7 @@ export const Navbar = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success" type="submit" id="searchInput">
               Search
             </button>
           </form>

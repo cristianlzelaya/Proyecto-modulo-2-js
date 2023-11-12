@@ -5,6 +5,7 @@ import { imagenDestacada } from "../utils/imgDestacada.js";
 import { User } from "../classes/user.js";
 import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
 
+
 let movies;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -44,3 +45,28 @@ const adminCreate = () => {
   }
 };
 adminCreate();
+
+
+const searchInput = document.getElementById("searchInput")
+
+const searchByName = (value) => {
+  let arrayProductByName = [];
+  console.log(arrayProductByName);
+  console.log(arrayProductByName);
+  const stringValue = value.trim().toLowerCase(); 
+    const productName = producto.name.toLowerCase(); 
+    if (productName.includes(stringValue)) {
+      arrayProductByName.push(producto);
+    };
+  return arrayProductByName;
+};
+
+const renderFiltersProductsSearch = (searchInputvalue) => {
+  let filteredProducts = searchByName(searchInputValue);
+}
+searchInput.addEventListener("keyup", (e) => {
+  renderFiltersProductsSearch(
+    e.target.value.toLowerCase(),
+  );
+});
+
