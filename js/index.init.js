@@ -2,7 +2,7 @@ import { Navbar } from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
 import imagenDestacada from "../components/imagenDestacada.js";
-import { User } from "../classes/user.js";
+import { Admin } from "../classes/admin.js";
 import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
 
 let movies;
@@ -30,7 +30,7 @@ const renderImgDestacada = (movies) => {
 };
 
 const adminCreate = () => {
-  const user = new User({
+  const user = new Admin({
     email: "PruebaRolling@gmail.com",
     password: "Admin83i",
     role: "admin",
