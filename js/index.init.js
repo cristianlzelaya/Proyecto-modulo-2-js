@@ -35,7 +35,7 @@ const renderImgDestacada = (movies) => {
   if (peliculaDestacada) {
     contenidoHTML = imagenDestacada(peliculaDestacada);
   } else {
-    contenidoHTML = "No hay una imagen";
+    contenidoHTML = "";
   }
 
   imgDestacada.innerHTML = contenidoHTML;
