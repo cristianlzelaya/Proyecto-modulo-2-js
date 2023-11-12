@@ -1,8 +1,8 @@
 import { redireccionarInicio } from "../utils/redireccionarInicio.js";
-import { redireccionarRegistro } from "../utils/redireccionarRegistro.js";
+import { redireccionarRegistro } from "../js/utils/redireccionarRegistro.js";
 import { redireccionarLogin } from "../utils/redireccionarLogin.js";
 import { logout } from "../utils/userNoLog.js";
-import { ObtenerUsuarioLog } from "../utils/obtenerUsuarioLogeado.js";
+import { ObtenerUsuarioLog } from "../js/utils/obtenerUsuarioLogeado.js";
 
 window.redireccionarInicioHandler = redireccionarInicio;
 window.redireccionarRegistroHandler = redireccionarRegistro;

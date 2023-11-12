@@ -1,11 +1,4 @@
-import Navbar from "../components/navbar.js";
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    Navbar();
-  });
-
-  const btn = document.getElementById('button');
+const btn = document.getElementById('button');
 
   document.getElementById('form')
    .addEventListener('submit', function(event) {

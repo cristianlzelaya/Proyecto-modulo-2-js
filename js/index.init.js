@@ -3,7 +3,7 @@ import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
 import { imagenDestacada } from "../utils/imgDestacada.js";
 import { User } from "../classes/user.js";
-import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
+import { ObtenerUsuarios } from "./utils/obtenerUsuarios.js";
 
 let movies;
 
