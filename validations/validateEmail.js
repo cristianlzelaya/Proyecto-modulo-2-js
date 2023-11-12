@@ -1,4 +1,4 @@
-import { emailRegex } from "./emailRegex";
+import { emailRegex } from "./emailRegex.js";
 
 /**
  *

@@ -24,14 +24,10 @@ const CarrouselCardComponent = (pelicula) => {
 
 window.verMasButtonClick = (event) => {
   const idMovie = event.target.dataset.movieId;
-  console.log("Clic en Ver Más. ID de la película:", idMovie);
   const peliculas = getMovies();
   const pelicula = peliculas.find((pelicula) => pelicula.id === idMovie);
   if (pelicula) {
-    console.log("Pelicula encontrada:", pelicula);
     mostrarModal(pelicula);
-  } else {
-    console.error(`No se encontró la película con ID: ${idMovie}`);
   }
 };
 
