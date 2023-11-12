@@ -1,38 +1,53 @@
 import { Navbar } from "../components/navbar.js";
 import { setMovies } from "./services/setMovies.js";
 import { getMovies } from "./services/getMovies.js";
-import { imagenDestacada } from "../utils/imgDestacada.js";
-import { User } from "../classes/user.js";
+import imagenDestacada from "../components/imagenDestacada.js";
+import { Admin } from "../classes/admin.js";
 import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
 
+import { getEstrenos } from "./services/getEstrenos.js";
+import { getPeliculas } from "./services/getPeliculas.js";
+import { getSeries } from "./services/getSeries.js";
+import { getDocumentales } from "./services/getDocumentales.js";
+import { mostrarModal } from "./ModalDestacada.js";
 
 let movies;
 
 document.addEventListener("DOMContentLoaded", function () {
   Navbar();
-  setMovies();
   movies = getMovies();
   console.log(movies);
   renderImgDestacada(movies);
+  getEstrenos();
+  getPeliculas();
+  getSeries();
+  getDocumentales();
 });
+
+setMovies();
+
+console.log(getMovies("movies"));
 
 const imgDestacada = document.getElementById("imgDestacada");
 
 const renderImgDestacada = (movies) => {
-  imgDestacada.innerHTML = "";
-  movies.map((movie) => {
-    const destacada = movie.destacada === true;
-    if (destacada) {
-      imgDestacada.innerHTML += imagenDestacada(movie);
-    }
-  });
+  let contenidoHTML = "";
+  const peliculaDestacada = movies.find((movie) => movie.favorita === true);
+  if (peliculaDestacada) {
+    contenidoHTML = imagenDestacada(peliculaDestacada);
+  } else {
+    contenidoHTML = "";
+  }
+
+  imgDestacada.innerHTML = contenidoHTML;
 };
 
 const adminCreate = () => {
-  const user = new User({
+  const user = new Admin({
     email: "PruebaRolling@gmail.com",
     password: "Admin83i",
     role: "admin",
+    aprobado: true,
   });
   const existingUsers = ObtenerUsuarios();
   const adminExists = existingUsers.some(
@@ -46,27 +61,21 @@ const adminCreate = () => {
 };
 adminCreate();
 
+const section = document.getElementById("searchInputSection");
 
-const searchInput = document.getElementById("searchInput")
-
-const searchByName = (value) => {
-  let arrayProductByName = [];
-  console.log(arrayProductByName);
-  console.log(arrayProductByName);
-  const stringValue = value.trim().toLowerCase(); 
-    const productName = producto.name.toLowerCase(); 
-    if (productName.includes(stringValue)) {
-      arrayProductByName.push(producto);
-    };
-  return arrayProductByName;
+export const renderSection = (value) => {
+  section.innerHTML = "";
+  value.map((movie) => {
+    const cardHTML = `
+      <div class="card">
+        <img src="${movie.imagen}" alt="${movie.nombre}" class="card-img-top" style="width: 200px; height: 150px; margin: 10px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white; font-size: 1.5em;">${movie.nombre}</h5>
+          <p class="card-text" style="color: white; font-size: 1.2em;">Es un ${movie.categoria} de ${movie.nombre}</p>
+          <p class="card-text" style="color: white; font-size: 1em;">${movie.descripcion}</p>
+        </div>
+      </div>
+    `;
+    section.innerHTML += cardHTML;
+  });
 };
-
-const renderFiltersProductsSearch = (searchInputvalue) => {
-  let filteredProducts = searchByName(searchInputValue);
-}
-searchInput.addEventListener("keyup", (e) => {
-  renderFiltersProductsSearch(
-    e.target.value.toLowerCase(),
-  );
-});
-

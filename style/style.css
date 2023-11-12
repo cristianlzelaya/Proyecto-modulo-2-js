@@ -1,33 +1,13 @@
-.body {
+body {
   background: linear-gradient(to right, rgb(2, 2, 95), rgb(46, 1, 46));
 }
 
+.body {
+  background: linear-gradient(to right, rgb(18, 18, 92), rgb(49, 8, 65));
+}
 #logoNav {
   width: 65px;
   height: auto;
-}
-.bgError {
-  background-color: rgb(96, 32, 128);
-}
-
-.fondoFooter {
-  background-color: #602080;
-}
-
-
-.letrasFooter{
-  color: rgb(191, 120, 191);
-}
-
-.footerTitle {
-  color: rgb(242, 248, 255);
-  margin: 1rem;
-}
-
-
-.img{
-  height: 100vh;
-  background-image: url("https://1.bp.blogspot.com/-2l-99Qyd1K8/UmeNEO_FaWI/AAAAAAAAl8Y/vxYBA4cQ1lM/s1600/thor-2-mundo-oscuro-posters-todos.jpg");
 }
 
 .navbar {
@@ -50,3 +30,59 @@
   margin-right: 15px;
 }
 
+.bg-destacada {
+  background-color: rgba(0, 0, 0, 0.889);
+  border-radius: 20px;
+}
+
+.bg-modal-destacada {
+  background-color: rgb(26, 25, 25);
+}
+
+.reproduccion {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.841);
+  text-decoration: none;
+  padding: 2px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 1.3rem;
+}
+.reproduccion:hover {
+  color: rgba(0, 0, 0, 0.921);
+
+  background-color: rgb(255, 217, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .reproduccion {
+    font-size: 1rem;
+    width: 170px;
+    height: 50px;
+  }
+}
+#logoNav {
+  width: 65px;
+  height: auto;
+}
+.bgError {
+  background-color: rgb(96, 32, 128);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+
+h4,
+h5 {
+  color: #b030b0;
+}
+
+p {
+  margin-left: 3px;
+}
