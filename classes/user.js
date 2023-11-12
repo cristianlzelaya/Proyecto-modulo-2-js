@@ -1,5 +1,5 @@
 export class User {
-  constructor({ email, password, role }) {
+  constructor({ email, password, role, aprobado }) {
     this.email = email;
     this.password = password;
     this.role = role;
