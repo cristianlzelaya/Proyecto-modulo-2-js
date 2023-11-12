@@ -4,6 +4,10 @@ import { getMovies } from "./services/getMovies.js";
 import imagenDestacada from "../components/imagenDestacada.js";
 import { Admin } from "../classes/admin.js";
 import { ObtenerUsuarios } from "../utils/obtenerUsuarios.js";
+import { getEstrenos } from "./services/getEstrenos.js";
+import { getPeliculas } from "./services/getPeliculas.js";
+import { getSeries } from "./services/getSeries.js";
+import { getDocumentales } from "./services/getDocumentales.js";
 
 let movies;
 
@@ -13,7 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
   movies = getMovies();
   console.log(movies);
   renderImgDestacada(movies);
+  getEstrenos();
+  getEstrenos();
+  getPeliculas();
+  getSeries();
+  getDocumentales();
 });
+
+console.log(getMovies("movies"));
 
 const imgDestacada = document.getElementById("imgDestacada");
 

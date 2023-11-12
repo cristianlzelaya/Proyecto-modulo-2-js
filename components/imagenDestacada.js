@@ -31,8 +31,7 @@ const imagenDestacada = (peliculaDestacada) => {
 </div>
       </div>
   </div>
-</div>
-  `;
+</div>`;
   return imgDestacada;
 };
 

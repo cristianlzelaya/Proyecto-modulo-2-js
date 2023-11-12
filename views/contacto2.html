@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="../style/register.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('E_JM4RuVOz2M15Mcq')
+</script>
+  <body class="body">
+    <header></header>
+    <main>
+      <section>
+        <div class="login-box">
+          <h2>Contacto</h2>
+          <form id="form" name="signUpForm">
+            <div class="user-box field">
+                <input
+                type="email"
+                name="email_id"
+                id="email_id"
+                class="form-control"
+                minlength="3"
+                required
+                maxlength="30"
+                />
+                <label for="email_id">Email</label>
+            </div>
+            <div class="user-box field">
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                minlength="3"
+                required
+                maxlength="30"
+              />
+              <label for="from_name">Nombre</label>
+            </div>
+            <div class="user-box field">
+                <textarea class="form-control" name="message" id="message" minlength="3" maxlength="200" required></textarea> 
+                <label for="message">Mensaje</label>
+            </div>    
+            <button type="submit" class="styled-button" id="button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Enviar mail
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="../js/contacto.js"></script>
+  </body>
+</html>
+
