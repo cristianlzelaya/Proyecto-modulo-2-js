@@ -54,10 +54,11 @@ const estrenosContainer = document.getElementById("gliderDocumentales");
 
 export const createCarruselItem = () => {
   const obtEstrenos = getDocumentales();
-  obtEstrenos.map(
-    (pelicula) =>
-      (estrenosContainer.innerHTML += CarrouselCardComponent(pelicula))
-  );
+  obtEstrenos.map((pelicula) => {
+    if (pelicula.publicado) {
+      estrenosContainer.innerHTML += CarrouselCardComponent(pelicula);
+    }
+  });
 };
 
 createCarruselItem();

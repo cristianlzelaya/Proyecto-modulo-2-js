@@ -13,7 +13,6 @@ let movies;
 
 document.addEventListener("DOMContentLoaded", function () {
   Navbar();
-  setMovies();
   movies = getMovies();
   console.log(movies);
   renderImgDestacada(movies);
@@ -23,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
   getSeries();
   getDocumentales();
 });
+
+setMovies();
 
 console.log(getMovies("movies"));
 
@@ -58,3 +59,18 @@ const adminCreate = () => {
   }
 };
 adminCreate();
+
+const section = document.getElementById("searchInputSection");
+
+export const renderSection = (value) => {
+  section.innerHTML = "";
+  value.map((product) => {
+    const cardHTML = `
+      <div class="card">
+        <h1>${product.nombre}</h1>
+        <p>${product.descripcion}</p>
+      </div>
+    `;
+    section.innerHTML += cardHTML;
+  });
+};

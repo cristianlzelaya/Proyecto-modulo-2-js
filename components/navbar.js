@@ -3,6 +3,9 @@ import { redireccionarRegistro } from "../utils/redireccionarRegistro.js";
 import { redireccionarLogin } from "../utils/redireccionarLogin.js";
 import { logout } from "../utils/userNoLog.js";
 import { ObtenerUsuarioLog } from "../utils/obtenerUsuarioLogeado.js";
+import { getMovies } from "../js/services/getMovies.js";
+import { searchByName } from "../utils/searchByName.js";
+import { renderSection } from "../js/index.init.js";
 
 window.redireccionarInicioHandler = redireccionarInicio;
 window.redireccionarRegistroHandler = redireccionarRegistro;
@@ -10,6 +13,7 @@ window.redireccionarLoginHandler = redireccionarLogin;
 window.logoutHandler = logout;
 
 const header = document.querySelector("header");
+const renderMovieButton = window.location.pathname == "/index.html";
 
 export const Navbar = () => {
   const loggedUser = ObtenerUsuarioLog();
@@ -17,7 +21,7 @@ export const Navbar = () => {
   const navContent = `
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color: white;">Peliculas</a>
+      <a class="navbar-brand" style="color: white;">PelisGruop</a>
       <img src="../assets/Logo.jpg" alt="logoNav" id="logoNav" />
       <button
         class="navbar-toggler"
@@ -42,7 +46,6 @@ export const Navbar = () => {
               style="color: white;"
               aria-current="page"
               id="inicioButton"
-              href="#"
               onclick="redireccionarInicioHandler()"
             >Inicio</a>
           </li>
@@ -99,17 +102,23 @@ export const Navbar = () => {
                `
           }
         </ul>
-        <form class="d-flex">
+        ${
+          renderMovieButton
+            ? `<form class="d-flex">
           <input
             class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
+            id="searchInput"
+            onkeyup="renderHandler(event.target.value)"
           />
-          <button class="btn btn-outline-success" type="submit">
-            Search
+          <button class="btn btn-outline-light" type="submit">
+            Buscar
           </button>
-        </form>
+        </form>`
+            : ""
+        }
       </div>
     </div>
   </nav>
@@ -117,5 +126,11 @@ export const Navbar = () => {
 
   header.innerHTML = navContent;
 };
+const renderHandler = (value) => {
+  const resultado = searchByName(value);
+  renderSection(resultado);
+};
+
+window.renderHandler = renderHandler;
 
 export default Navbar;

@@ -54,10 +54,11 @@ const estrenosContainer = document.getElementById("gliderSeries");
 
 export const createCarruselItem = () => {
   const obtEstrenos = getSeries();
-  obtEstrenos.map(
-    (pelicula) =>
-      (estrenosContainer.innerHTML += CarrouselCardComponent(pelicula))
-  );
+  obtEstrenos.map((pelicula) => {
+    if (pelicula.publicado) {
+      estrenosContainer.innerHTML += CarrouselCardComponent(pelicula);
+    }
+  });
 };
 
 createCarruselItem();

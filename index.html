@@ -33,6 +33,7 @@
     <header></header>
     <main>
       <section id="imgDestacada"></section>
+      <section id="searchInputSection"></section>
       <div class="contenedorCarruseles">
         <div class="glider-contain container mt-2" id="sliderItem">
           <h1 class="text-dark ms-3 mx-3 border-bottom text-white">Estrenos</h1>
@@ -217,52 +218,110 @@
         aria-labelledby="detallesModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="detallesModalLabel">
-                Detalles de la Película
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h4 id="modalNombre"></h4>
-              <p id="modalCategoria"></p>
-              <p id="modalDescripcion"></p>
-              <img id="modalImagen" class="img-fluid" alt="Imagen Destacada" />
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div
+            class="modal-content"
+            style="
+              background: linear-gradient(
+                to right,
+                rgb(18, 18, 92),
+                rgb(49, 8, 65)
+              );
+              color: white;
+            "
+          >
+            <div class="modal-body text-center">
+              <h4 id="modalNombre" style="margin-bottom: 10px"></h4>
+              <p id="modalCategoria" style="margin-bottom: 10px"></p>
+              <p id="modalDescripcion" style="margin-bottom: 10px"></p>
+              <img
+                id="modalImagen"
+                class="img-fluid mx-auto"
+                alt="Imagen Destacada"
+                style="margin-bottom: 10px"
+              />
               <img
                 id="modalImagenDestacada"
-                class="img-fluid"
+                class="img-fluid mx-auto"
                 alt="Imagen Destacada"
+                style="margin-bottom: 10px"
               />
               <iframe
                 id="modalVideoIframe"
                 style="display: none"
                 frameborder="0"
                 allowfullscreen
+                class="mx-auto d-block"
+                style="margin-bottom: 10px"
               ></iframe>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Cerrar
-              </button>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <footer class="container-fluid bg-body-dark">
+        <div class="row ps-1 fondo">
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center my-2"
+          >
+            <div>
+              <h4 class="d-flex justify-content-center footerTitle">
+                CINE'S NAME
+              </h4>
+              <p class="mx-3 letras">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                delectus minima aperiam ex. Voluptatum reiciendis incidunt ea
+                hic sunt dolor, repudiandae magni repellat perferendis, velit
+                accusamus voluptates dolorum ipsum culpa.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center my-4 ps-2 pe-1"
+          >
+            <div class="d-flex d-flex align-items-center">
+              <h5>
+                <a href="./views/nosotros.html" class="link-light mx-2"
+                  >Acerca de nosotros
+                </a>
+              </h5>
+              <h5 class="text-light">| © PeliName</h5>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mb-5 pe-2"
+          >
+            <div>
+              <a
+                href="./views/contacto2.html"
+                class="d-flex aling-items-center ps-1 footerTitle"
+              >
+                <h4>Contactos</h4>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i
+                  class="fa-brands fa-instagram fa-2xl m-2"
+                  style="color: #b030b0"
+                ></i
+              ></a>
+              <a href="https://es-es.facebook.com/" target="_blank"
+                ><i
+                  class="fa-brands fa-square-facebook fa-2xl p-2"
+                  style="color: #b030b0"
+                ></i
+              ></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><i
+                  class="fa-brands fa-square-twitter fa-2xl m-2"
+                  style="color: #b030b0"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
