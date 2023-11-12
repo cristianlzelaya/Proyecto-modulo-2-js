@@ -2,9 +2,9 @@ import Navbar from "../components/navbar.js";
 import { validateEmail } from "../validations/validateEmail.js";
 import { validateSignUpPassword } from "../validations/validateSignUpPassword.js";
 import { validateExistingEmail } from "../validations/validateExistingEmail.js";
-import { crearUsuario } from "../js/utils/crearUsuario.js";
-import { redireccionarInicio } from "../js/utils/redireccionarInicio.js";
-import { guardarUsuario } from "../js/utils/guardarUsuarioLogeado.js";
+import { crearUsuario } from "../utils/crearUsuario.js";
+import { redireccionarInicio } from "../utils/redireccionarInicio.js";
+import { guardarUsuario } from "../utils/guardarUsuarioLogeado.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   Navbar();
