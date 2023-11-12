@@ -8,6 +8,7 @@ import { getEstrenos } from "./services/getEstrenos.js";
 import { getPeliculas } from "./services/getPeliculas.js";
 import { getSeries } from "./services/getSeries.js";
 import { getDocumentales } from "./services/getDocumentales.js";
+import { mostrarModal } from "./ModalDestacada.js";
 
 let movies;
 
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   movies = getMovies();
   console.log(movies);
   renderImgDestacada(movies);
-  getEstrenos();
   getEstrenos();
   getPeliculas();
   getSeries();
@@ -64,11 +64,15 @@ const section = document.getElementById("searchInputSection");
 
 export const renderSection = (value) => {
   section.innerHTML = "";
-  value.map((product) => {
+  value.map((movie) => {
     const cardHTML = `
       <div class="card">
-        <h1>${product.nombre}</h1>
-        <p>${product.descripcion}</p>
+        <img src="${movie.imagen}" alt="${movie.nombre}" class="card-img-top" style="width: 200px; height: 150px; margin: 10px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white; font-size: 1.5em;">${movie.nombre}</h5>
+          <p class="card-text" style="color: white; font-size: 1.2em;">Es un ${movie.categoria} de ${movie.nombre}</p>
+          <p class="card-text" style="color: white; font-size: 1em;">${movie.descripcion}</p>
+        </div>
       </div>
     `;
     section.innerHTML += cardHTML;
