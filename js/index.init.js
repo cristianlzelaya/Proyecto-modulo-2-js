@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
   renderImgDestacada(movies);
   getEstrenos();
   getPeliculas();
-  getSeries();
   getDocumentales();
 });
 
