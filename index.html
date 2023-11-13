@@ -221,14 +221,6 @@
               <h5 class="modal-title" id="detallesModalLabel">
                 Detalles de la Película
               </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
             </div>
             <div class="modal-body">
               <h4 id="modalNombre"></h4>
@@ -240,22 +232,15 @@
                 class="img-fluid"
                 alt="Imagen Destacada"
               />
-              <iframe
-                id="modalVideoIframe"
-                style="display: none"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+                class="btn btn-primary btn-transparent"
+                id="verTrailerBtn"
               >
-                Cerrar
+                Ver Trailer
               </button>
             </div>
+            <div class="modal-footer"></div>
           </div>
         </div>
       </div>
