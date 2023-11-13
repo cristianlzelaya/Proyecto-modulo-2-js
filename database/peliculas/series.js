@@ -4,7 +4,7 @@ export const movies = [
     nombre: "Breaking Bad",
     descripcion:
       "Breaking Bad es una aclamada serie de televisión que narra la transformación de Walter White, un tranquilo profesor de química, en un temible narcotraficante después de ser diagnosticado con cáncer. Motivado por asegurar el futuro financiero de su familia, Walter se asocia con un exalumno, Jesse Pinkman, para fabricar y vender metanfetamina. La serie se centra en la evolución de Walter de un hombre común a un criminal despiadado conocido como Heisenberg. A medida que su imperio de la droga crece, enfrenta dilemas éticos y amenazas de otros narcotraficantes, lo que lo sumerge en un peligroso submundo criminal. Breaking Bad es una obra maestra de la televisión conocida por su intensidad y complejidad.",
-    imagenDestacada:"",
+    imagenDestacada: "",
     imagenCarta: "",
     categoria: "serie",
     destacada: true,
