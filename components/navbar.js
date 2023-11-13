@@ -7,7 +7,6 @@ import { getMovies } from "../js/services/getMovies.js";
 import { searchByName } from "../utils/searchByName.js";
 import { renderSection } from "../js/index.init.js";
 
-
 window.redireccionarInicioHandler = redireccionarInicio;
 window.redireccionarRegistroHandler = redireccionarRegistro;
 window.redireccionarLoginHandler = redireccionarLogin;
@@ -15,6 +14,7 @@ window.logoutHandler = logout;
 
 const header = document.querySelector("header");
 const renderMovieButton = window.location.pathname == "/index.html";
+const renderMovieButtonPath = window.location.pathname == "/";
 
 export const Navbar = () => {
   const loggedUser = ObtenerUsuarioLog();
@@ -103,7 +103,7 @@ export const Navbar = () => {
           }
         </ul>
         ${
-          renderMovieButton
+          renderMovieButton || renderMovieButtonPath
             ? `<form class="d-flex">
           <input
             class="form-control me-2"
