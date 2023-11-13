@@ -28,8 +28,13 @@ h2{
     color: white;
 }
 
+p {
+    text-align: justify;
+}
+
 .caracteristicas{
-    background-color: rgb(218, 222, 249)
+    background-color: rgb(218, 222, 249);
+    height: 450px;
 }
 
 .imgPrincipales{
@@ -41,13 +46,36 @@ h2{
     display: none;
 }
 
+.card {
+    height: 250px;
+    background-color: rgb(218, 222, 249);
+}
+
+
 .cards-iconos{
     width: 80px;
     border: none;
+    
+}
+
+.card-equipo{
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .cards-integrantes{
+    border-radius: 100%;
+    height: 270px;
     max-width: 250px;
+    
 }
 
 .roles{
