@@ -10,6 +10,7 @@ export const movies = [
     destacada: true,
     favorito: false,
   },
+
   {
     id: crypto.randomUUID(),
     nombre: "Friends",
@@ -19,6 +20,53 @@ export const movies = [
     imagenCarta: "",
     categoria: "serie",
     destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Loki",
+    descripcion:
+      "Loki es una serie de televisión estadounidense creada por Michael Waldron para la plataforma de streaming Disney+, basada en el personaje de Marvel Comics. La serie es producida por Marvel Studios y está ambientada en el Universo cinematográfico de Marvel (UCM), compartiendo continuidad con las películas de la franquicia. La serie tiene lugar después de los eventos de la película Avengers: Endgame (2019), en la que una versión alternativa de Loki creó una nueva línea de tiempo",
+    imagenCarta: "",
+    categoria: "serie",
+    destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "La casa de papel",
+    descripcion:
+      "La casa de papel es una serie de televisión española creada por Álex Pina, producida por Atresmedia en sus inicios, aunque posteriormente por Netflix y con el periodista y guionista Javier Gómez Santander como coproductor ejecutivo Un misterioso hombre conocido como «el Profesor» ha pasado toda su vida planeando el mayor de los atracos de la historia: entrar en la Fábrica Nacional de Moneda y Timbre e imprimir 2400 millones de euros. Para llevar a cabo este ambicioso plan, el Profesor recluta a un equipo de ocho personas con ciertas habilidades y que no tienen nada que perder. Estos, junto al Profesor, planean cada paso del atraco durante cinco meses. Este equipo, con nombres de diferentes ciudades del mundo, requiere de 11 días de reclusión en la Fábrica, durante los cuales tiene que lidiar con las fuerzas de élite de la policía y 67 rehenes.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "serie",
+    destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Stranger Things",
+    descripcion:
+      "Stranger Things es una serie de televisión web estadounidense de suspenso y ciencia ficción coproducida y distribuida por Netflix. La historia arranca durante la década de los 80, en el pueblo ficticio de Hawkins, Indiana, El cercano Laboratorio Nacional del pueblo aparentemente realiza investigaciones científicas para el Departamento de Energía de los Estados Unidos, pero experimenta en secreto con lo paranormal y lo sobrenatural, a veces con sujetos de prueba humanos. Sin darse cuenta, han creado un portal a una dimensión alternativa a la que se refieren como Upside Down, cuya presencia comienza a afectar a los residentes de Hawkins de manera calamitosa.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "serie",
+    destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Sex Education",
+    descripcion:
+      "Sex Education es una serie de televisión web británica de comedia dramática, creada por Laurie Nunn, que se estrenó el 11 de enero de 2019 en Netflix. Está protagonizada por Gillian Anderson, Asa Butterfield, Emma Mackey, Ncuti Gatwa, Connor Swindells y Kedar Williams-Stirling. Una segunda temporada se estrenó el 17 de enero de 2020 y la tercera temporada fue estrenada el 17 de septiembre de 2021. El 25 de septiembre de 2021, Netflix, informó la renovación para una cuarta y última temporada, que se estrenó el 21 de septiembre de 2023.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "serie",
+    destacada: true,
     favorito: false,
   },
   {
@@ -41,6 +89,42 @@ export const movies = [
     imagenDestacada: "",
     imagenCarta: "",
     categoria: "serie",
+    destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Iron Man 3",
+    descripcion:
+      "Iron Man 3 (estilizado en pantalla como Iron Man Three)4​ es una película de superhéroes estadounidense de 2014 basada en el personaje de Marvel Comics Iron Man, producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures en colaboración con Paramount Pictures.N 1​ Es la tercera y última entrega de la Trilogía de Iron Man, y la séptima película en el Universo cinematográfico de Marvel (UCM). La película es dirigida por Shane Black, que escribió el guion con Drew Pearce, y es protagonizada por Robert Downey Jr. como Tony Stark / Iron Man, junto a Gwyneth Paltrow, Don Cheadle, Guy Pearce, Rebecca Hall, Stéphanie Szostak, James Badge Dale, Jon Favreau y Ben Kingsley. En Iron Man 3, Tony Stark lucha con las ramificaciones de los eventos de The Avengers, durante una campaña nacional de terrorismo en los Estados Unidos al mando del misterioso Mandarín. ",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "pelicula",
+    destacada: true,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Spider-Man: No Way Home",
+    descripcion:
+      "Spider-Man: No Way Home (titulada Spider-Man: sin camino a casa en Hispanoamérica) es una película estadounidense de superhéroes basada en el personaje Spider-Man, de Marvel Comics, coproducida por Columbia Pictures y Marvel Studios, y distribuida por Sony Pictures Releasing. Es la secuela de Spider-Man: Homecoming (2017) y Spider-Man: Lejos de casa (2019), y la película número 27 en el Universo cinematográfico de Marvel (UCM). ",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "pelicula",
+    destacada: true,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Kingsman: The Secret Service",
+    descripcion:
+      "Kingsman: The Secret Service es una película británico-estadounidense de espionaje y comedia de acción del año 2015,6​ dirigida por Matthew Vaughn, basándose en el cómic The Secret Service, creado por Dave Gibbons y Mark Millar. El guion fue escrito por Vaughn y Jane Goldman. La historia sigue el reclutamiento y la formación de un agente secreto potencial, GaryEggsy Unwin (Taron Egerton), en una organización secreta de espionaje. Eggsy se une a una misión para hacer frente a la amenaza global que representa Richmond Valentine (Samuel L. Jackson), un megalómano multimillonario. La película también está protagonizada por Colin Firth, Mark Strong y Michael Caine.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "pelicula",
     destacada: false,
     favorito: false,
   },
@@ -92,6 +176,18 @@ export const movies = [
     destacada: false,
     favorito: false,
   },
+  {
+    id: crypto.randomUUID(),
+    nombre: "Baby drive",
+    descripcion:
+      "En Atlanta, Georgia, un Subaru Impreza WRX STi rojo se detiene frente a un banco. Dentro hay tres ladrones, Buddy (Jon Hamm), Darling (Eiza González), Griff (Jon Bernthal) y su conductor de fuga, Baby (Ansel Elgort). Los ladrones entran al banco mientras Baby toca la canción Bellbottoms . Momentos después, los ladrones vuelven corriendo al auto. Baby sale de allí con la música a todo volumen en sus oídos. La policía persigue al auto por toda la ciudad, pero Baby es capaz de maniobrar rápidamente a través de los obstáculos haciendo derrapar el auto y haciendo locas maniobras al ritmo de la música mientras evade a la policía",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "pelicula",
+    destacada: false,
+    favorito: false,
+  },
+
 
   {
     id: crypto.randomUUID(),
@@ -186,4 +282,53 @@ export const movies = [
     destacada: false,
     favorito: false,
   },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Dahmer",
+    descripcion:
+      "La miniserie relata la vida del asesino Jeffrey Dahmer, y explora los diferentes motivos que probablemente lo llevaron a convertirse en uno de los asesinos en serie más famosos de los Estados Unidos. A lo largo de la serie se exploran vivencias de su infancia y adolescencia, influenciadas por un padre ausente y una madre drogadicta. El interés de Dahmer por los cadáveres se inicia desde muy pequeño en su niñez, junto a su padre, cuando este le enseña a diseccionar animales muertos como forma de compartir momentos de cercanía con su hijo realizando el hobby que le apasionaba. Estos sucesos impulsan su obsesión por la muerte y los cuerpos sin vida, lo que resulta en su primer homicidio accidental en 1978 a la edad de 18 años.​ Entre los años 1978 y 1991, Jeffrey Dahmer asesinó a 17 personas, siendo todas sus víctimas hombres y niños adolescentes, principalmente afroamericanos. Todos sus crímenes fueron cometidos en Wisconsin y Ohio.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "Documental",
+    destacada: true,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "Maradona, sueño bendito",
+    descripcion:
+      "Maradona, sueño bendito es una serie de televisión web argentina del 2021, del género biografía y drama, sobre la vida del futbolista Diego Maradona emitida por la plataforma de video bajo demanda Amazon Prime Video y secundariamente por el canal de televisión de aire El Nueve, producida por BTF Media, Dhana Media y Latin We, y distribuida por Amazon Studios.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "Documental",
+    destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "depp vs heard",
+    descripcion:
+      "Depp vs. Heard es una serie documental que analiza el juicio por difamación y maltrato entre los actores Johnny Depp y Amber Heard. La serie compara los testimonios de los dos protagonistas y explora el impacto del caso en Hollywood y en las redes sociales23. El juicio se realizó en Virginia entre abril y junio de 2022 y terminó con un fallo favorable a Depp.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "Documental",
+    destacada: false,
+    favorito: false,
+  },
+
+  {
+    id: crypto.randomUUID(),
+    nombre: "El misterio de Marilyn Monroe: Las cintas inéditas",
+    descripcion:
+      "Este documental explora el misterio que rodea la muerte del icono del cine Marilyn Monroe a través de entrevistas inéditas con su círculo más cercano.",
+    imagenDestacada: "",
+    imagenCarta: "",
+    categoria: "Documental",
+    destacada: false,
+    favorito: false,
+  },
+
 ];
