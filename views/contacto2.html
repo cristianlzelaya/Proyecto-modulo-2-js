@@ -12,12 +12,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous"
   />
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
 
-<script type="text/javascript">
-  emailjs.init('E_JM4RuVOz2M15Mcq')
-</script>
+  <script type="text/javascript">
+    emailjs.init("E_JM4RuVOz2M15Mcq");
+  </script>
   <body class="body">
     <header></header>
     <main>
@@ -26,7 +28,7 @@
           <h2>Contacto</h2>
           <form id="form" name="signUpForm">
             <div class="user-box field">
-                <input
+              <input
                 type="email"
                 name="email_id"
                 id="email_id"
@@ -34,8 +36,8 @@
                 minlength="3"
                 required
                 maxlength="30"
-                />
-                <label for="email_id">Email</label>
+              />
+              <label for="email_id">Email</label>
             </div>
             <div class="user-box field">
               <input
@@ -49,9 +51,16 @@
               <label for="from_name">Nombre</label>
             </div>
             <div class="user-box field">
-                <textarea class="form-control" name="message" id="message" minlength="3" maxlength="200" required></textarea> 
-                <label for="message">Mensaje</label>
-            </div>    
+              <textarea
+                class="form-control"
+                name="message"
+                id="message"
+                minlength="3"
+                maxlength="200"
+                required
+              ></textarea>
+              <label for="message">Mensaje</label>
+            </div>
             <button type="submit" class="styled-button" id="button">
               <span></span>
               <span></span>
@@ -67,4 +76,3 @@
     <script type="module" src="../js/contacto.js"></script>
   </body>
 </html>
-
