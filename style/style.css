@@ -135,6 +135,7 @@ body {
 .footerText,
 .footerLink,
 .footerTextLight {
+  text-align: justify;
   color: white;
 }
 

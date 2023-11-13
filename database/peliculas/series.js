@@ -27,7 +27,7 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/IEEbUzffzrk?si=PaLKgqhNMe2-DQ9R",
+    video: "https://www.youtube.com/watch?v=MfvvhM6IJS0&ab_channel=CINECONECTA",
   },
 
   {
@@ -59,7 +59,8 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/3y-6iaveY6c?si=POhA2eoyrclzmss9",
+    video:
+      "https://www.youtube.com/watch?v=6UMmM_XmFVg&ab_channel=NetflixLatinoam%C3%A9rica",
   },
 
   {
@@ -74,7 +75,8 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/32qjg3lg7gA?si=_2O_Zkcobtf-biEY",
+    video:
+      "https://www.youtube.com/watch?v=Wre1F5YyIlA&ab_channel=NetflixEspa%C3%B1a",
   },
 
   {
@@ -166,7 +168,8 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/pYmDc7WiRK8?si=IeZhxqml6SMbN_Xj",
+    video:
+      "https://www.youtube.com/watch?v=Rs5J8kh62yo&ab_channel=20thCenturyStudiosEspa%C3%B1a",
   },
 
   {
@@ -197,7 +200,7 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/s1DG6H_hc8E?si=qRi3OJgWeHRfviXu",
+    video: "https://www.youtube.com/watch?v=8CTjcVr9Iao&ab_channel=Miramax",
   },
 
   {
@@ -257,7 +260,8 @@ export const movies = [
     categoria: "estreno",
     destacada: false,
     publicado: true,
-    video: "https://youtu.be/usWO2JUx464?si=r4MrXMcowklkECox",
+    video:
+      "https://www.youtube.com/watch?v=6BW-F4d9lV0&ab_channel=SensaCineTRAILERS",
   },
 
   {
@@ -272,12 +276,13 @@ export const movies = [
     categoria: "estreno",
     destacada: false,
     publicado: true,
-    video: "https://youtu.be/jcg_XuHXpzQ?si=0B6zrT-6hQnfkPKV",
+    video:
+      "https://www.youtube.com/watch?v=O5BOxn8Go8U&ab_channel=UniversalPicturesM%C3%A9xico",
   },
 
   {
     id: crypto.randomUUID(),
-    name: "El Camino",
+    nombre: "El Camino",
     descripcion:
       "El Camino: A Breaking Bad Movie es una película que sirve como epílogo de la aclamada serie de televisión Breaking Bad. La película sigue a Jesse Pinkman (Aaron Paul) después de su liberación de un grupo de nazis que lo mantenían prisionero. Ahora en libertad, Jesse busca escapar de su pasado criminal y encontrar una nueva vida lejos de la ley. La película se sumerge en el viaje de Jesse mientras enfrenta peligros y decisiones cruciales. El Camino es un emocionante cierre de la historia de Jesse Pinkman y ofrece una visión adicional al mundo de Breaking Bad, explorando la redención y la supervivencia en un entorno implacable",
     imagenDestacada:
@@ -293,7 +298,7 @@ export const movies = [
 
   {
     id: crypto.randomUUID(),
-    name: "13 horas",
+    nombre: "13 horas",
     descripcion:
       "13 Horas: Los soldados secretos de Bengasi es una película de acción y drama basada en hechos reales dirigida por Michael Bay. La trama se centra en el ataque a un complejo diplomático estadounidense en Bengasi, Libia, en 2012. La película sigue a un equipo de seis ex militares contratados como contratistas de seguridad, que se encuentran en medio de un intenso asedio por parte de milicianos. Durante 13 horas, estos valientes hombres luchan desesperadamente por proteger a los diplomáticos y personal de la embajada mientras enfrentan un fuego cruzado y la falta de apoyo. La película rinde homenaje a su coraje y determinación en medio de la adversidad, explorando temas de sacrificio y heroísmo en situaciones extremas.",
     imagenDestacada:
@@ -304,12 +309,13 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/5MBjAN7jqsQ?si=qiA_dKQ9PihLupNF",
+    video:
+      "https://www.youtube.com/watch?v=wdWtDYI2UUw&ab_channel=UIPArgentina",
   },
 
   {
     id: crypto.randomUUID(),
-    name: "Beckham",
+    nombre: "Beckham",
     descripcion:
       "Beckham For the Love of the Game: Este documental sigue al famoso futbolista David Beckham mientras emprende un viaje por siete continentes, jugando partidos de fútbol con aficionados de todo el mundo. Más allá del deporte, explora su influencia global y su dedicación al juego que lo catapultó a la fama, revelando su pasión por el fútbol y su compromiso con causas benéficas.",
     imagenDestacada:
@@ -320,12 +326,12 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/9hVyCnvU8PA?si=O9qt7RZEX74FYzKN",
+    video: "https://www.youtube.com/watch?v=nUVNbJMWi_c&ab_channel=Netflix",
   },
 
   {
     id: crypto.randomUUID(),
-    name: "Fórmula 1: Drive to Survive",
+    nombre: "Fórmula 1: Drive to Survive",
     descripcion:
       "La serie documental sumerge a los espectadores en el mundo frenético de la Fórmula 1, ofreciendo una visión detrás de escena de equipos, pilotos y carreras. Desde rivalidades intensas hasta momentos de triunfo y tragedia, muestra la tensión y la pasión de este deporte de alta velocidad.",
     imagenDestacada:
@@ -336,7 +342,7 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/wtJPe1ksS6E?si=piBYKJHocOqF9WPY",
+    video: "https://www.youtube.com/watch?v=wtJPe1ksS6E&ab_channel=Netflix",
   },
 
   {
@@ -352,7 +358,8 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/zkmxFvWu8Bc?si=QltuO-ROKZGSC6lB",
+    video:
+      "https://www.youtube.com/watch?v=zkmxFvWu8Bc&ab_channel=NetflixLatinoam%C3%A9rica",
   },
 
   {
@@ -368,7 +375,8 @@ export const movies = [
     destacada: false,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/qQjYmZgB3QQ?si=JvuGx7uvMUPeKcqX",
+    video:
+      "https://www.youtube.com/watch?v=qQjYmZgB3QQ&ab_channel=NetflixLatinoam%C3%A9rica",
   },
 
   {
@@ -384,7 +392,8 @@ export const movies = [
     destacada: true,
     favorito: false,
     publicado: true,
-    video: "https://youtu.be/OjUL6j2Az3Q?si=k6f_MvirA7xbjd4K",
+    video:
+      "https://www.youtube.com/watch?v=OjUL6j2Az3Q&ab_channel=Tr%C3%A1ilersconDoblajeEspa%C3%B1olLatinobySoldierBoy",
   },
 
   {
