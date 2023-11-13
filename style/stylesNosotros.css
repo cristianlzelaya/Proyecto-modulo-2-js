@@ -4,31 +4,6 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  padding: 10px 0;
-  background-color: #000000;
-}
-
-.navbar-brand {
-  margin-right: auto;
-  padding: 0 20px;
-}
-
-.navbar-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-nav .nav-item {
-  margin-right: 15px;
-}
-
-#logoNav {
-  width: 65px;
-  height: auto;
-}
-
 body {
   background: linear-gradient(to right, rgb(2, 2, 95), rgb(46, 1, 46));
 }
@@ -57,7 +32,6 @@ p {
 
 .caracteristicas {
   background-color: rgb(218, 222, 249);
-  height: 450px;
 }
 
 .imgPrincipales {
@@ -106,20 +80,18 @@ p {
   background-color: rgba(255, 238, 246, 0.735);
 }
 
-@media only screen and (min-width: 992px) {
-  .row {
-    justify-content: space-between;
+@media only screen and (max-width: 990px) {
+  .imgVisionMision {
+    display: none;
   }
-
-  .col-lg-3 {
-    flex: 0 0 30%;
-    max-width: 30%;
+  .imgPrincipales {
+    border-radius: 20px;
   }
-
-  .col-lg-6 {
-    flex: 0 0 48%;
-    max-width: 48%;
-    margin-bottom: 20px;
+  .imgHistoria {
+    display: none;
+  }
+  .imgHistoriaGrande {
+    display: block;
   }
 }
 
@@ -133,19 +105,4 @@ p {
   h1 {
     font-size: 2.5rem;
   }
-}
-
-footer {
-  background-color: black;
-  color: white;
-  margin-top: 30px;
-}
-
-h4,
-h5 {
-  color: #b030b0;
-}
-
-p {
-  margin-left: 3px;
 }
